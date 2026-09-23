@@ -4,9 +4,9 @@
   /* Clean Light Theme — default */
   --bg-primary      : #F8FAFC;
   --bg-secondary    : #F1F5F9;
-  --card-bg         : rgba(255, 255, 255, 0.85);
-  --card-bg-hover   : rgba(255, 255, 255, 1);
-  --border-color    : rgba(203, 213, 225, 0.8);
+  --card-bg         : #FFFFFF;
+  --card-bg-hover   : #FFFFFF;
+  --border-color    : #E2E8F0;
   --accent-purple   : #6366F1;
   --accent-blue     : #2563EB;
   --accent-glow     : rgba(99, 102, 241, 0.25);
@@ -21,7 +21,7 @@
   --r-lg            : 20px;
   --r-md            : 14px;
   --r-sm            : 8px;
-  --blur            : blur(20px);
+  --blur            : none;
   --ease-out        : cubic-bezier(0.16,1,0.3,1);
   --ease-spring     : cubic-bezier(0.34,1.56,0.64,1);
   --ease-in-out     : cubic-bezier(0.4,0,0.2,1);
@@ -53,6 +53,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   cursor: auto;
 }
 
@@ -74,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 
 a { text-decoration:none; color:inherit }
 ul { list-style:none }
-img { display:block; max-width:100%; height:auto }
+img { display:block; max-width:100%; height:auto; image-rendering:-webkit-optimize-contrast; }
 button { font-family:inherit; cursor:pointer; border:none }
 
 :focus-visible {
@@ -161,23 +162,21 @@ button { font-family:inherit; cursor:pointer; border:none }
   width: calc(100% - 2rem);
   max-width: 1100px;
   z-index: 1000;
-  background: rgba(255,255,255,0.9);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: 100px;
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
   padding: .75rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   transition: top .4s var(--ease-out), padding .4s var(--ease-out),
               background .4s, box-shadow .4s;
 }
 #header-nav.scrolled {
   top: .4rem;
-  background: rgba(255,255,255,0.97);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  background: #FFFFFF;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.09);
 }
 
 .nav-brand {
@@ -583,12 +582,11 @@ button { font-family:inherit; cursor:pointer; border:none }
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--r-xl);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
   padding: clamp(1.75rem, 5vw, 3.5rem);
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  box-shadow: 0 4px 25px -4px rgba(0, 0, 0, 0.05);
 }
 
 .about-grid {
@@ -1024,8 +1022,7 @@ button { font-family:inherit; cursor:pointer; border:none }
 .ui-card:hover .ui-thumb img { transform:scale(1.1) }
 .ui-hover-overlay {
   position:absolute; inset:0;
-  background:rgba(12,16,36,.72);
-  backdrop-filter:blur(4px);
+  background:rgba(12,16,36,.82);
   display:flex; align-items:center; justify-content:center;
   opacity:0; transition:opacity .3s;
 }
@@ -1142,8 +1139,7 @@ button { font-family:inherit; cursor:pointer; border:none }
 
 .modal-overlay {
   position:fixed; inset:0;
-  background:rgba(7,11,26,.93);
-  backdrop-filter:blur(18px);
+  background:rgba(7,11,26,.95);
   z-index:99999;
   display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1.25rem;
   opacity:0; pointer-events:none;
@@ -1199,11 +1195,11 @@ footer { padding:2.5rem 0; text-align:center; border-top:1px solid var(--border-
 
 .sr {
   opacity:0;
-  transform:translateY(26px);
-  filter:blur(4px);
-  transition:opacity .75s var(--ease-out), transform .75s var(--ease-out), filter .75s var(--ease-out);
+  transform:translateY(18px);
+  transition:opacity .55s var(--ease-out), transform .55s var(--ease-out);
+  will-change:opacity, transform;
 }
-.sr.ready { opacity:1; transform:translateY(0); filter:blur(0) }
+.sr.ready { opacity:1; transform:translateY(0); }
 .sr-d1 { transition-delay:.1s }
 .sr-d2 { transition-delay:.2s }
 .sr-d3 { transition-delay:.3s }
@@ -1339,9 +1335,9 @@ footer { padding:2.5rem 0; text-align:center; border-top:1px solid var(--border-
 [data-theme="light"] {
   --bg-primary      : #F8FAFC;
   --bg-secondary    : #F1F5F9;
-  --card-bg         : rgba(255, 255, 255, 0.85);
-  --card-bg-hover   : rgba(255, 255, 255, 1);
-  --border-color    : rgba(203, 213, 225, 0.8);
+  --card-bg         : #FFFFFF;
+  --card-bg-hover   : #FFFFFF;
+  --border-color    : #E2E8F0;
   --accent-purple   : #6366F1;
   --accent-blue     : #2563EB;
   --accent-glow     : rgba(99, 102, 241, 0.25);
@@ -1355,8 +1351,8 @@ footer { padding:2.5rem 0; text-align:center; border-top:1px solid var(--border-
   color: var(--text-primary);
 }
 [data-theme="light"] #header-nav {
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* Theme Selector Pill */
@@ -1411,7 +1407,6 @@ footer { padding:2.5rem 0; text-align:center; border-top:1px solid var(--border-
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  backdrop-filter: blur(10px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .filter-btn:hover {
@@ -1459,7 +1454,6 @@ footer { padding:2.5rem 0; text-align:center; border-top:1px solid var(--border-
   font-size: 0.9rem;
   font-weight: 500;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px var(--accent-glow);
-  backdrop-filter: blur(12px);
   animation: toastIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   display: flex;
   align-items: center;

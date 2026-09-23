@@ -87,8 +87,7 @@ h4 {
     top: 0;
     width: 100%;
     padding: 1.5rem 5%;
-    background: rgba(10, 10, 11, 0.8);
-    backdrop-filter: blur(10px);
+    background: #0A0A0B;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -560,7 +559,6 @@ h4 {
     inset: 0 !important;
     z-index: 2147483647 !important;
     background: rgba(0, 0, 0, 0.98) !important;
-    backdrop-filter: blur(15px) !important;
     justify-content: center !important;
     align-items: center !important;
     flex-direction: column !important;

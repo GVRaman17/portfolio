@@ -20,7 +20,6 @@
     display: flex;
     gap: var(--space-md);
     align-items: flex-start;
-    backdrop-filter: blur(10px);
 }
 
 .education-card::before {

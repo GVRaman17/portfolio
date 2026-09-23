@@ -7,12 +7,11 @@
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.03);
+    background: #FFFFFF;
     padding: 3rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--glass-border);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
