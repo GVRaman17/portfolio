@@ -244,21 +244,37 @@ function initReveal() {
   const items = $$('.sr');
   if (!items.length) return;
 
-  if (prefersReducedMotion) {
-    items.forEach(el => el.classList.add('ready'));
-    return;
-  }
-
-  if (!('IntersectionObserver' in window)) {
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
     items.forEach(el => el.classList.add('ready'));
     return;
   }
 
   const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('ready'); obs.unobserve(e.target); } });
-  }, { rootMargin: '0px 0px -50px 0px', threshold: 0.06 });
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('ready');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { rootMargin: '0px 0px 100px 0px', threshold: 0 });
 
   items.forEach(el => obs.observe(el));
+
+  // If page was loaded directly with a hash like #contact, immediately reveal it
+  if (window.location.hash) {
+    try {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        $$('.sr', target).forEach(el => el.classList.add('ready'));
+        if (target.classList.contains('sr')) target.classList.add('ready');
+      }
+    } catch (_) {}
+  }
+
+  // Safety timer: ensure elements are never permanently hidden
+  setTimeout(() => {
+    items.forEach(el => el.classList.add('ready'));
+  }, 1000);
 }
 
 function initCountUp() {
