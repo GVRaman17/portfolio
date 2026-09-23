@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadham Hussain — Creative Technologist & Developer</title>
+    <title>Venkatramamoorthy G — Python Full Stack Developer</title>
     <meta name="description"
-        content="Portfolio of Sadham Hussain — Creative Technologist, Software Developer, Python Backend Specialist, UI/UX Designer & Freelancer.">
-    <meta name="author" content="Sadham Hussain">
-    <meta property="og:title" content="Sadham Hussain — Portfolio">
+        content="Portfolio of Venkatramamoorthy G — Aspiring Python Full Stack Developer proficient in Python OOP, Django, DRF, REST APIs, SQL, ORM, React, and Linux VPS deployments.">
+    <meta name="author" content="Venkatramamoorthy G">
+    <meta property="og:title" content="Venkatramamoorthy G — Python Full Stack Developer">
     <meta property="og:description"
-        content="Premium portfolio of a Creative Technologist building world-class digital experiences.">
+        content="Aspiring Python Full Stack Developer proficient in Python OOP, Django, DRF, REST APIs, SQL, React, and Linux VPS deployments.">
     <meta property="og:type" content="website">
+
+    <!-- Instant theme apply — prevents flash of wrong theme -->
+    <script>
+      (function(){
+        var t = localStorage.getItem('portfolio_theme') || 'light';
+        if (t !== 'dark') document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +42,7 @@
     </div>
 
     <header id="header-nav">
-        <a href="#home" class="nav-brand">Sadham<span>.Dev</span></a>
+        <a href="#home" class="nav-brand">Venkat<span>.Dev</span></a>
 
         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
             <span></span><span></span><span></span>
@@ -49,22 +57,24 @@
             <a href="#certifications" class="nav-item">Certifications</a>
             <a href="#projects" class="nav-item">Projects</a>
             <a href="#contact" class="nav-item">Contact</a>
+
         </nav>
     </header>
 
     <main class="container">
 
+        <!-- HERO SECTION -->
         <section id="home">
             <div class="hero-grid">
 
                 <div class="hero-left">
                     <div class="hero-badge sr">
-                        <span class="dot"></span> Creative Technologist
+                        <span class="dot"></span> Python Full Stack Developer
                     </div>
 
                     <h1 class="sr sr-d1">
                         Hi, I'm<br>
-                        <span class="gradient-text">Sadham Hussain</span>
+                        <span class="gradient-text">Venkatramamoorthy G</span>
                     </h1>
 
                     <div class="hero-role-line sr sr-d2">
@@ -72,9 +82,10 @@
                     </div>
 
                     <p class="hero-bio sr sr-d3">
-                        Highly motivated developer passionate about crafting pixel-perfect, premium digital
-                        experiences and high-performance Python backend architectures. Specialising in Django,
-                        modern frontend engineering, and user-centric UI/UX design.
+                        Aspiring Python Full Stack Developer proficient in Python OOP, Django, Django REST Framework (DRF),
+                        REST APIs, SQL, ORM, JSON, JavaScript, React, HTML5, and CSS3, with foundational knowledge in Core Java.
+                        Experienced in building responsive web applications, developing scalable backend services, managing
+                        secure database workflows, and deploying production solutions on Linux environments using Nginx and Gunicorn.
                     </p>
 
                     <div class="hero-ctas sr sr-d4">
@@ -85,8 +96,14 @@
                                     d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                             </svg>
                         </a>
-                        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
-                        <a href="assets/resume%202026.pdf" class="btn btn-secondary" download>
+                        <a href="mailto:venkat17092003@gmail.com" class="btn btn-secondary">
+                            Let's Talk
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </a>
+                        <a href="assets/Resume.pdf" class="btn btn-secondary" download="Venkatramamoorthy_G_Resume.pdf">
                             Download CV
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                 <path
@@ -98,50 +115,30 @@
                     <div class="hero-socials sr sr-d5">
                         <span class="label">Find me on</span>
                         <div class="socials-row">
-                            <a href="https://github.com/Sadham1412" target="_blank" class="social-chip"
+                            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="social-chip"
                                 aria-label="GitHub">
                                 <i class="devicon-github-original"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/sadham-hussain-b12971245" target="_blank"
+                            <a href="https://www.linkedin.com/in/venkatramamoorthy" target="_blank" rel="noopener noreferrer"
                                 class="social-chip" aria-label="LinkedIn">
                                 <i class="devicon-linkedin-plain" style="color:#0A66C2"></i>
                             </a>
-                            <a href="mailto:sadhamhussain.cbcs@gmail.com" class="social-chip" aria-label="Email">
+                            <a href="mailto:venkat17092003@gmail.com" class="social-chip" aria-label="Email">
                                 <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                                </svg>
-                            </a>
-                            <a href="https://instagram.com" target="_blank" class="social-chip" aria-label="Instagram">
-                                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="hero-right">
-                    <div class="orbit-wrapper">
-                        <div class="orbit-glow"></div>
-                        <div class="orbit-ring r1"></div>
-                        <div class="orbit-ring r2"></div>
-                        <div class="orbit-ring r3"></div>
-                        <div class="orbit-particle p1"></div>
-                        <div class="orbit-particle p2"></div>
-                        <div class="orbit-particle p3"></div>
-                    </div>
-                </div>
-
             </div>
 
-            <div class="scroll-cue" aria-hidden="true">
-                <span>Scroll Down</span>
-                <div class="mouse"></div>
-            </div>
+
         </section>
 
+        <!-- STATS SECTION -->
         <section id="stats" class="section-wrapper" style="padding-top:2rem;padding-bottom:4rem;">
             <div class="stats-grid">
                 <div class="stat-card sr">
@@ -151,47 +148,61 @@
                 </div>
                 <div class="stat-card sr sr-d1">
                     <div class="stat-icon">🏅</div>
-                    <div class="stat-number" data-target="6" data-suffix="+">0</div>
+                    <div class="stat-number" data-target="4" data-suffix="">0</div>
                     <div class="stat-label">Certifications</div>
                 </div>
                 <div class="stat-card sr sr-d2">
                     <div class="stat-icon">🎓</div>
-                    <div class="stat-number" data-target="8.26">0</div>
-                    <div class="stat-label">Post-Grad CGPA</div>
+                    <div class="stat-number" data-target="9.44">0</div>
+                    <div class="stat-label">MCA CGPA</div>
                 </div>
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="section-wrapper">
             <div class="glass-panel sr">
                 <div class="about-grid">
                     <div class="about-left">
                         <p class="about-eyebrow">Who I Am</p>
-                        <h3>Crafting Digital<br>Experiences</h3>
+                        <h3>Crafting Scalable<br>Python & Web Systems</h3>
                         <p>
-                            I am a designer and developer who loves transforming ideas into interactive, user-friendly
-                            solutions. Holding an MCA from B.S. Abdur Rahman Crescent Institute (8.26 CGPA), I focus
-                            on clean, scalable Python backends, premium UI architectures, and performance-driven
-                            frontends.
+                            I am an Aspiring Python Full Stack Developer dedicated to transforming ideas into robust,
+                            scalable, and user-friendly digital solutions. Holding a Master of Computer Applications (MCA)
+                            from B.S. Abdur Rahman Crescent Institute of Science and Technology with a <strong>9.44 CGPA</strong>,
+                            I focus on clean backend architectures using Django & DRF, secure relational database workflows in MySQL,
+                            and responsive modern frontend design.
                         </p>
                         <p>
-                            My work is inspired by the elegance of Apple, the minimalism of Linear, and the animation
-                            richness of Framer — and I aim to bring that same quality to every project I touch.
+                            With proven experience architecting full-scale production applications like <strong>GiftHub.sale</strong>
+                            on Linux VPS environments with Nginx, Gunicorn, SSL cryptographic encryption, and Razorpay API integration,
+                            I bridge robust backend infrastructure with seamless user interfaces.
                         </p>
+                        <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.25rem;">
+                            <span class="badge badge-purple">Team Collaboration & Problem Solving</span>
+                            <span class="badge badge-purple">Client & Technical Communication</span>
+                            <span class="badge badge-blue">English & Tamil</span>
+                        </div>
                     </div>
                     <div class="about-right">
                         <div class="degree-cards">
                             <div class="degree-card sr sr-d1">
-                                <div class="degree-emoji">🎓</div>
+                                <div class="degree-emoji">🏛️</div>
                                 <div class="degree-title">MCA</div>
                                 <div class="degree-sub">Master of Computer Applications</div>
-                                <div class="degree-gpa">8.26 CGPA</div>
+                                <div class="degree-gpa">9.44 CGPA</div>
                             </div>
                             <div class="degree-card sr sr-d2">
-                                <div class="degree-emoji">🎓</div>
+                                <div class="degree-emoji">🏫</div>
                                 <div class="degree-title">BCA</div>
                                 <div class="degree-sub">Bachelor of Computer Applications</div>
-                                <div class="degree-gpa">8.13 CGPA</div>
+                                <div class="degree-gpa">8.83 CGPA</div>
+                            </div>
+                            <div class="degree-card sr sr-d3">
+                                <div class="degree-emoji">🎓</div>
+                                <div class="degree-title">HSC & SSLC</div>
+                                <div class="degree-sub">Higher Secondary & Schooling</div>
+                                <div class="degree-gpa">Completed</div>
                             </div>
                         </div>
                     </div>
@@ -199,6 +210,7 @@
             </div>
         </section>
 
+        <!-- EDUCATION SECTION -->
         <section id="education" class="section-wrapper">
             <div class="section-header sr">
                 <span class="eyebrow">Academic Background</span>
@@ -212,8 +224,8 @@
                             <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
                             <span class="edu-year">2023 – 2025</span>
                         </div>
-                        <p class="edu-inst">B.S. Abdur Rahman Crescent Institute of Science & Technology, Chennai</p>
-                        <div class="edu-cgpa">CGPA Secured: <strong>8.26</strong></div>
+                        <p class="edu-inst">B.S. Abdur Rahman Crescent Institute of Science and Technology, Chennai</p>
+                        <div class="edu-cgpa">CGPA Secured: <strong>9.44</strong></div>
                     </div>
                 </div>
                 <div class="edu-card sr sr-d1">
@@ -223,13 +235,25 @@
                             <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
                             <span class="edu-year">2020 – 2023</span>
                         </div>
-                        <p class="edu-inst">Bharath Institute of Higher Education and Research, Chennai</p>
-                        <div class="edu-cgpa">CGPA Secured: <strong>8.13</strong></div>
+                        <p class="edu-inst">Bharath Institute of Higher Education And Research, Chennai</p>
+                        <div class="edu-cgpa">CGPA Secured: <strong>8.83</strong></div>
+                    </div>
+                </div>
+                <div class="edu-card sr sr-d2">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-body">
+                        <div class="edu-header">
+                            <h3 class="edu-degree">HSC & SSLC</h3>
+                            <span class="edu-year">2018 – 2020</span>
+                        </div>
+                        <p class="edu-inst">C.S.I. Corley Higher Secondary School</p>
+                        <div class="edu-cgpa">Status: <strong>Completed Secondary & Higher Secondary Education</strong></div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- EXPERIENCE SECTION -->
         <section id="experience" class="section-wrapper">
             <div class="section-header sr">
                 <span class="eyebrow">My Experience</span>
@@ -244,16 +268,24 @@
                     <div class="tl-node" aria-hidden="true"></div>
                     <div class="tl-card">
                         <div class="tl-main">
-                            <span class="tl-period">Apr – Jun 2026</span>
+                            <span class="tl-period">March 2026 – July 2026</span>
                             <div class="tl-role">Freelance Full Stack Developer</div>
-                            <div class="tl-company">GiftHub Marketplace</div>
+                            <div class="tl-company">GiftHub.sale &bull; <a href="https://www.gifthub.sale" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue)">Live Client Project</a></div>
                             <p class="tl-desc">
-                                Designed and deployed GiftHub — a premium digital gift-card marketplace with secure
-                                bidding,
-                                dynamic brand APIs, payment gateway integration, product management dashboard, and
-                                automated
-                                user notifications. Built with Django + Bootstrap 5.
+                                &bull; Architected and developed GiftHub.sale, a full-scale e-commerce digital gift card and voucher selling platform.<br>
+                                &bull; Deployed the production application on a Linux VPS using Nginx, Gunicorn, and SSL, utilizing cryptographic encryption to protect database voucher codes.<br>
+                                &bull; Integrated secure OTP-based user authentication and notifications using SMTP mail services alongside Google OAuth social login.<br>
+                                &bull; Engineered a comprehensive admin panel using Python and Django ORM to streamline voucher inventories, approvals, and order tracking.<br>
+                                &bull; Integrated Razorpay API payment gateway workflows to guarantee secure and seamless online transactions.
                             </p>
+                            <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                                <span class="badge badge-purple">Python</span>
+                                <span class="badge badge-purple">Django</span>
+                                <span class="badge badge-purple">MySQL</span>
+                                <span class="badge badge-purple">Razorpay API</span>
+                                <span class="badge badge-purple">Google OAuth</span>
+                                <span class="badge badge-purple">Linux VPS (Nginx + Gunicorn)</span>
+                            </div>
                         </div>
                         <div class="tl-icon"><i class="devicon-django-plain colored"></i></div>
                     </div>
@@ -263,35 +295,20 @@
                     <div class="tl-node" aria-hidden="true"></div>
                     <div class="tl-card">
                         <div class="tl-main">
-                            <span class="tl-period">Aug – Sep 2025</span>
-                            <div class="tl-role">Software Testing Intern</div>
-                            <div class="tl-company">Besant Technology</div>
-                            <p class="tl-desc">
-                                Executed manual and automated testing across multiple application modules. Worked on
-                                LinkedIn
-                                Optimization project — analysed profile performance, wrote comprehensive test scenarios,
-                                and
-                                improved application quality and reliability.
-                            </p>
-                        </div>
-                        <div class="tl-icon"><i class="devicon-selenium-original colored"></i></div>
-                    </div>
-                </div>
-
-                <div class="timeline-item sr sr-d2">
-                    <div class="tl-node" aria-hidden="true"></div>
-                    <div class="tl-card">
-                        <div class="tl-main">
-                            <span class="tl-period">Jun – Jul 2024</span>
+                            <span class="tl-period">June 2024 – July 2024</span>
                             <div class="tl-role">Frontend Developer Intern</div>
                             <div class="tl-company">IBM SkillBuild</div>
                             <p class="tl-desc">
-                                Developed responsive web interfaces using HTML5, CSS3 and JavaScript. Improved UI
-                                performance,
-                                fixed cross-browser inconsistencies, and enhanced accessibility across devices for
-                                multiple
-                                web projects.
+                                &bull; Developed responsive web interfaces using HTML, CSS, and JavaScript, ensuring cross-device compatibility.<br>
+                                &bull; Significantly improved UI performance and accessibility metrics across desktop, tablet, and mobile platforms.<br>
+                                &bull; Collaborated directly with cross-functional teams to implement dynamic and functional UI components.
                             </p>
+                            <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                                <span class="badge badge-blue">HTML5</span>
+                                <span class="badge badge-blue">CSS3</span>
+                                <span class="badge badge-blue">JavaScript</span>
+                                <span class="badge badge-blue">Responsive UI</span>
+                            </div>
                         </div>
                         <div class="tl-icon"><i class="devicon-html5-plain colored"></i></div>
                     </div>
@@ -300,202 +317,132 @@
             </div>
         </section>
 
+        <!-- TECHNICAL SKILLS SECTION -->
         <section id="skills" class="section-wrapper">
             <div class="section-header sr">
                 <span class="eyebrow">My Stack</span>
                 <h2>Technical Skills</h2>
             </div>
-            <div class="skills-grid">
+            <div class="skills-grid compact-skills">
 
+                <!-- 1. Backend & Python -->
                 <div class="skill-card sr">
-                    <div class="skill-card-title"><span>Languages & Web</span></div>
-                    <div class="skill-icons">
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-html5-plain colored"></i></div><span
-                                class="sk-tip">HTML5</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-css3-plain colored"></i></div><span
-                                class="sk-tip">CSS3</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-javascript-plain colored"></i></div><span
-                                class="sk-tip">JavaScript</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-python-plain colored"></i></div><span
-                                class="sk-tip">Python</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-django-plain colored"></i></div><span
-                                class="sk-tip">Django</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-react-original colored"></i></div><span
-                                class="sk-tip">React</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-bootstrap-plain colored"></i></div><span
-                                class="sk-tip">Bootstrap</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-mysql-plain colored"></i></div><span
-                                class="sk-tip">MySQL/SQL</span>
-                        </div>
+                    <div class="skill-card-title">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Backend &amp; Python</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-tag"><i class="devicon-django-plain colored"></i> Django</span>
+                        <span class="skill-tag"><i class="devicon-fastapi-plain colored"></i> REST APIs</span>
+                        <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-tag"><i class="devicon-java-plain colored"></i> Core Java</span>
                     </div>
                 </div>
 
+                <!-- 2. Frontend & Web -->
                 <div class="skill-card sr sr-d1">
-                    <div class="skill-card-title"><span>Design Tools</span></div>
-                    <div class="skill-icons">
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-figma-plain colored"></i></div><span
-                                class="sk-tip">Figma</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-photoshop-plain colored"></i></div><span
-                                class="sk-tip">Photoshop</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-illustrator-plain colored"></i></div><span
-                                class="sk-tip">Illustrator</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-xd-plain colored"></i></div><span
-                                class="sk-tip">After Effects</span>
-                        </div>
+                    <div class="skill-card-title">
+                        <i class="devicon-react-original colored"></i>
+                        <span>Frontend &amp; Web</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-tag"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="devicon-json-plain colored"></i> JSON</span>
                     </div>
                 </div>
 
+                <!-- 3. DevOps & Tools -->
                 <div class="skill-card sr sr-d2">
-                    <div class="skill-card-title"><span>Development</span></div>
-                    <div class="skill-icons">
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-git-plain colored"></i></div><span
-                                class="sk-tip">Git</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-github-original"></i></div><span
-                                class="sk-tip">GitHub</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-vscode-plain colored"></i></div><span
-                                class="sk-tip">VS Code</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-firebase-plain colored"></i></div><span
-                                class="sk-tip">Firebase</span>
-                        </div>
-                        <div class="sk">
-                            <div class="sk-wrap"><i class="devicon-mysql-plain colored"></i></div><span
-                                class="sk-tip">MySQL</span>
-                        </div>
+                    <div class="skill-card-title">
+                        <i class="devicon-linux-plain colored"></i>
+                        <span>DevOps &amp; Tools</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-linux-plain colored"></i> Linux VPS</span>
+                        <span class="skill-tag"><i class="devicon-nginx-original colored"></i> Nginx / Gunicorn</span>
+                        <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-tag"><i class="devicon-github-original"></i> GitHub</span>
+                        <span class="skill-tag"><i class="devicon-postman-plain colored"></i> Postman</span>
+                        <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span class="skill-tag"><i class="devicon-arduino-plain colored"></i> Arduino IDE</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- CERTIFICATIONS & PUBLICATIONS SECTION -->
         <section id="certifications" class="section-wrapper">
             <div class="section-header sr">
-                <span class="eyebrow">Credentials & Research</span>
-                <h2>Certifications & Publications</h2>
+                <span class="eyebrow">Credentials & Innovation</span>
+                <h2>Certifications & Patent</h2>
             </div>
             <div class="certs-layout">
 
                 <div class="certs-grid">
                     <div class="cert-card sr">
                         <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-html5-plain colored"></i></div>
+                            <div class="cert-icon"><i class="devicon-python-plain colored"></i></div>
                             <div>
-                                <div class="cert-name">Frontend Development</div>
-                                <div class="cert-issuer">IBM SkillsBuild</div>
+                                <div class="cert-name">Full Stack Web Development in Python</div>
+                                <div class="cert-issuer">Softlogic Academy (SLA) &bull; IBM Skills Network</div>
                             </div>
                         </div>
                         <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/AICTE B1 PD 1-972-705.pdf','Frontend Development — IBM SkillsBuild')">View
-                                Certificate</button>
-                            <span class="cert-year">2024</span>
+                            <span class="badge badge-purple">Verified Credential</span>
+                            <a href="assets/certificates/ibm_sla_python_fullstack.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn" aria-label="View Full Stack Python Certificate">
+                                View Certificate →
+                            </a>
                         </div>
                     </div>
 
                     <div class="cert-card sr sr-d1">
                         <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-googlecloud-plain colored"></i></div>
+                            <div class="cert-icon"><i class="devicon-python-plain colored"></i></div>
                             <div>
-                                <div class="cert-name">Cloud Computing</div>
-                                <div class="cert-issuer">NPTEL</div>
+                                <div class="cert-name">Data Science using Python</div>
+                                <div class="cert-issuer">SWAYAM &bull; AICTE / NPTEL</div>
                             </div>
                         </div>
                         <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/Cloud Computing (1).pdf','Cloud Computing — NPTEL')">View
-                                Certificate</button>
-                            <span class="cert-year">2024</span>
+                            <span class="badge badge-purple">Verified Credential</span>
+                            <a href="assets/certificates/swayam_data_science_python.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn" aria-label="View Data Science Certificate">
+                                View Certificate →
+                            </a>
                         </div>
                     </div>
 
                     <div class="cert-card sr sr-d2">
                         <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-python-plain colored"></i></div>
+                            <div class="cert-icon"><i class="devicon-linux-plain colored"></i></div>
                             <div>
-                                <div class="cert-name">Python Programming</div>
-                                <div class="cert-issuer">Coursera</div>
+                                <div class="cert-name">Foundations of Cybersecurity</div>
+                                <div class="cert-issuer">Coursera &bull; Google Professional</div>
                             </div>
                         </div>
                         <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/Python-Certificate-1 (1).pdf','Python Programming — Coursera')">View
-                                Certificate</button>
-                            <span class="cert-year">2024</span>
+                            <span class="badge badge-blue">Professional Credential</span>
+                            <a href="assets/certificates/coursera_cybersecurity.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn" aria-label="View Cybersecurity Certificate">
+                                View Certificate →
+                            </a>
                         </div>
                     </div>
 
                     <div class="cert-card sr sr-d3">
                         <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-selenium-original colored"></i></div>
+                            <div class="cert-icon"><i class="devicon-embeddedc-plain colored"></i></div>
                             <div>
-                                <div class="cert-name">Software Testing</div>
-                                <div class="cert-issuer">Besant Technology</div>
+                                <div class="cert-name">Hardware and Networking</div>
+                                <div class="cert-issuer">Technical Certification</div>
                             </div>
                         </div>
                         <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/software testing certificate.jpeg','Software Testing — Besant Technology')">View
-                                Certificate</button>
-                            <span class="cert-year">2025</span>
-                        </div>
-                    </div>
-
-                    <div class="cert-card sr sr-d4">
-                        <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-tensorflow-original colored"></i></div>
-                            <div>
-                                <div class="cert-name">Machine Learning</div>
-                                <div class="cert-issuer">EduSkills / AICTE</div>
-                            </div>
-                        </div>
-                        <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/Completion Certificate _ SkillsBuild.PDF','Machine Learning — AICTE')">View
-                                Certificate</button>
-                            <span class="cert-year">2024</span>
-                        </div>
-                    </div>
-
-                    <div class="cert-card sr sr-d5">
-                        <div class="cert-top">
-                            <div class="cert-icon"><i class="devicon-figma-plain colored"></i></div>
-                            <div>
-                                <div class="cert-name">UI/UX Design</div>
-                                <div class="cert-issuer">Coursera</div>
-                            </div>
-                        </div>
-                        <div class="cert-bottom">
-                            <button class="cert-view-btn"
-                                onclick="openModal('assets/certificates/Sadham Hussain.pdf','UI/UX Design — Coursera')">View
-                                Certificate</button>
+                            <span class="badge badge-blue">Technical Credential</span>
                             <span class="cert-year">2024</span>
                         </div>
                     </div>
@@ -504,17 +451,22 @@
                 <div class="sr sr-d2">
                     <div class="journal-card">
                         <div>
-                            <div class="journal-icon-big">📄</div>
-                            <h3>Real-Time Action Identification System Using ML with OpenCV and Fall Detection</h3>
-                            <div class="journal-meta">
-                                Published in: <strong>Tanz Journal</strong><br>
-                                ISSN: <strong>TANJ (1369-7720)</strong><br>
-                                DOI/Ref: <strong>TJ1882A</strong>
+                            <div class="journal-icon-big">💡</div>
+                            <div style="display:inline-block; margin-bottom:.5rem;">
+                                <span class="badge badge-purple" style="font-size:.78rem; padding:.25rem .75rem;">PATENT PUBLISHED</span>
                             </div>
+                            <h3>IoT-Enabled Waste Segregation & Monitoring</h3>
+                            <div class="journal-meta">
+                                Publication Status: <strong>Patent Published</strong><br>
+                                Period: <strong>Dec 2024 – May 2025</strong><br>
+                                Technologies: <strong>Arduino IDE, C++, Sensor Arrays</strong>
+                            </div>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">
+                                Engineered an IoT-based smart bin capable of automatically classifying waste into dry, wet, or metal categories using sensor arrays. Integrated sensors and microcontrollers for precise sorting and real-time monitoring with automated alerts.
+                            </p>
                         </div>
-                        <a href="https://tanzj.net/wp-content/uploads/2025/04/5-TJ1882A.pdf" target="_blank"
-                            class="btn btn-primary" style="justify-content:center;">
-                            Read Publication
+                        <a href="#projects" class="btn btn-primary" style="justify-content:center; margin-top:1rem;">
+                            View in Projects
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.414l-7 7L10.586 12l7-7H13V3h8z" />
@@ -526,246 +478,128 @@
             </div>
         </section>
 
+        <!-- PROJECTS SECTION -->
         <section id="projects" class="section-wrapper">
             <div class="section-header sr">
-                <span class="eyebrow">Visual Showcase & Code</span>
-                <h2>UI Projects</h2>
+                <span class="eyebrow">Engineering Showcase & Code</span>
+                <h2>Projects & Work</h2>
+            </div>
+
+            <div class="filter-tabs sr">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Full-Stack & Web</button>
+                <button class="filter-btn" data-filter="python">Python & AI</button>
+                <button class="filter-btn" data-filter="iot">IoT & Embedded</button>
             </div>
 
             <div class="sr">
-                <div class="sub-section-label">
-                    UI/UX Design Showcase <span class="tag">Figma · Photoshop</span>
-                </div>
-                <div class="ui-grid">
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/foodbar_ui.jpg','Foodbar — Food Delivery UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/foodbar_ui.jpg" alt="Foodbar UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Foodbar</div>
-                            <div class="ui-sub">Food Delivery App Concept</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/coffee_ui.jpg','Coffee Delight — Coffee Brand UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/coffee_ui.jpg" alt="Coffee Delight UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Coffee Delight</div>
-                            <div class="ui-sub">Premium Coffee Shop Concept</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/ecommerce_ui.jpg','EVNX Adventure — Motorcycle Gear Store')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/ecommerce_ui.jpg" alt="EVNX Adventure UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">EVNX Adventure</div>
-                            <div class="ui-sub">E-Commerce Landing Design</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/resort_ui.jpg','Fintech Dashboard — Finance Application UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/resort_ui.jpg" alt="Fintech Dashboard UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Fintech Dashboard</div>
-                            <div class="ui-sub">Finance Application UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/hotdog_ui.jpg','Lunch Combo — Hot Dog Combo Ordering UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/hotdog_ui.jpg" alt="Lunch Combo UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Lunch Combo</div>
-                            <div class="ui-sub">Hot Dog Combo Ordering UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/icecream_ui.jpg','Blackberry Bliss — Ice Cream & Dessert UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/icecream_ui.jpg" alt="Blackberry Bliss UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Blackberry Bliss</div>
-                            <div class="ui-sub">Ice Cream & Dessert UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/modern_house.jpg','Modern Estate — Premium Real Estate Portal UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/modern_house.jpg" alt="Modern Estate UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Modern Estate</div>
-                            <div class="ui-sub">Real Estate Portal UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/pineapple_boba.jpg','Pineapple Boba — Bubble Tea Delivery UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/pineapple_boba.jpg" alt="Pineapple Boba UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Pineapple Boba</div>
-                            <div class="ui-sub">Bubble Tea Delivery UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/sprite_design.jpg','Sprite Rebrand — Soda Landing Page UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/sprite_design.jpg" alt="Sprite Rebrand UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Sprite Rebrand</div>
-                            <div class="ui-sub">Soda Landing Page UI</div>
-                        </div>
-                    </div>
-
-                    <div class="ui-card"
-                        onclick="openModal('assets/projects/strawberry_energy.jpg','Strawberry Energy — Energy Drink Brand UI')">
-                        <div class="ui-thumb">
-                            <img src="assets/projects/strawberry_energy.jpg" alt="Strawberry Energy UI" loading="lazy">
-                            <div class="ui-hover-overlay"><button class="ui-zoom-icon">🔍</button></div>
-                        </div>
-                        <div class="ui-info">
-                            <div class="ui-title">Strawberry Energy</div>
-                            <div class="ui-sub">Energy Drink Brand UI</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sr">
-                <div class="sub-section-label">
-                    Real-World Applications <span class="tag">Live Projects</span>
-                </div>
                 <div class="real-grid">
 
-                    <div class="real-card">
+                    <!-- Project 1: Logistics Management System -->
+                    <div class="real-card project-filterable" data-category="web">
                         <div class="real-body">
                             <div class="badge-row">
-                                <span class="badge badge-purple">Freelance</span>
                                 <span class="badge badge-purple">Python</span>
                                 <span class="badge badge-purple">Django</span>
                                 <span class="badge badge-purple">MySQL</span>
+                                <span class="badge badge-purple">Bootstrap</span>
+                                <span class="badge badge-purple">Render</span>
                             </div>
-                            <div class="real-title">GiftHub Marketplace</div>
+                            <div class="real-title">Logistics Management System</div>
+                            <div style="font-size:0.8rem; color:var(--accent-blue); font-weight:600; margin-top:-0.5rem;">Aug 2026 – Sep 2026</div>
                             <p class="real-desc">
-                                A highly optimised digital gift-card marketplace allowing users to securely purchase,
-                                trade,
-                                bid on, and sell gift cards. Configured transactional notifications, integrated
-                                Razorpay,
-                                and built a custom analytics dashboard.
+                                Developed a web-based logistics management system using Django and MySQL with role-based access for Admin, Customer, and Driver. Implemented order creation, driver assignment, location management, delivery tracking, and order history modules. Automated driver assignment based on driver availability, location, and package weight capacity. Automated continuous deployment on Render.
                             </p>
                         </div>
                         <div class="real-media">
-                            <img src="assets/projects/gifthub_mockup.png" alt="GiftHub Marketplace" loading="lazy">
+                            <img src="assets/projects/xpressgo_logistics.png" alt="XpressGo Logistics Management System" loading="lazy">
                         </div>
                         <div class="real-actions">
-                            <a href="https://www.gifthub.sale/" target="_blank" class="btn btn-primary">
+                            <a href="https://logistic-project-zj01.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                                 Live Demo
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.414l-7 7L10.586 12l7-7H13V3h8z" />
                                 </svg>
                             </a>
-                            <a href="https://github.com/Sadham1412" target="_blank" class="btn btn-secondary">GitHub
-                                →</a>
+                            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub →</a>
                         </div>
                     </div>
 
-                    <div class="real-card">
+                    <!-- Project 2: GiftHub Marketplace -->
+                    <div class="real-card project-filterable" data-category="web">
                         <div class="real-body">
                             <div class="badge-row">
-                                <span class="badge badge-blue">Python</span>
-                                <span class="badge badge-blue">OpenCV</span>
-                                <span class="badge badge-blue">ML</span>
-                                <span class="badge badge-blue">Streamlit</span>
+                                <span class="badge badge-purple">Freelance</span>
+                                <span class="badge badge-purple">Python</span>
+                                <span class="badge badge-purple">Django</span>
+                                <span class="badge badge-purple">Razorpay</span>
+                                <span class="badge badge-purple">Linux VPS</span>
                             </div>
-                            <div class="real-title">Real-Time Action Recognition</div>
+                            <div class="real-title">GiftHub.sale — Digital Gift Card & Voucher Platform</div>
+                            <div style="font-size:0.8rem; color:var(--accent-blue); font-weight:600; margin-top:-0.5rem;">March 2026 – July 2026</div>
                             <p class="real-desc">
-                                A computer vision application for real-time fall detection using MediaPipe pose
-                                estimation.
-                                Triggers instant WhatsApp/SMS alerts and includes a modern admin control panel.
-                                Published
-                                as a research paper in Tanz Journal.
+                                Architected and deployed GiftHub.sale, a full-scale e-commerce digital gift card and voucher selling platform. Deployed on a Linux VPS using Nginx, Gunicorn, and SSL with cryptographic encryption to protect database voucher codes. Integrated secure OTP user authentication and notifications using SMTP mail services, Google OAuth social login, custom Django ORM admin panel, and Razorpay API payment gateway.
                             </p>
                         </div>
                         <div class="real-media">
-                            <img src="https://i.postimg.cc/63kJCGGd/fall-detection-home.webp"
-                                alt="Fall Detection System" loading="lazy">
+                            <img src="assets/projects/gifthub_marketplace.png" alt="GiftHub.sale Marketplace" loading="lazy">
                         </div>
                         <div class="real-actions">
-                            <a href="https://github.com/Sadham1412" target="_blank" class="btn btn-primary">Live
-                                Demo</a>
-                            <a href="https://github.com/Sadham1412" target="_blank" class="btn btn-secondary">GitHub
-                                →</a>
+                            <a href="https://www.gifthub.sale" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                Live Demo
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.414l-7 7L10.586 12l7-7H13V3h8z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub →</a>
                         </div>
                     </div>
 
-                    <div class="real-card">
+                    <!-- Project 3: IoT-Enabled Waste Segregation -->
+                    <div class="real-card project-filterable" data-category="iot">
                         <div class="real-body">
                             <div class="badge-row">
-                                <span class="badge badge-purple">XML</span>
-                                <span class="badge badge-purple">Java</span>
-                                <span class="badge badge-purple">Firebase</span>
-                                <span class="badge badge-purple">Android</span>
+                                <span class="badge badge-blue">Arduino IDE</span>
+                                <span class="badge badge-blue">C++</span>
+                                <span class="badge badge-blue">Sensors</span>
+                                <span class="badge badge-purple">Patent Published</span>
                             </div>
-                            <div class="real-title">Online Auction System</div>
+                            <div class="real-title">IoT-Enabled Waste Segregation & Monitoring</div>
+                            <div style="font-size:0.8rem; color:var(--accent-blue); font-weight:600; margin-top:-0.5rem;">Dec 2024 – May 2025</div>
                             <p class="real-desc">
-                                A native Android bidding application designed using XML and Java, featuring real-time
-                                bidding notifications,
-                                live countdown timers, and synchronous database updates powered by Firebase Realtime
-                                Database.
+                                Engineered an IoT-based smart bin capable of automatically classifying waste into dry, wet, or metal categories using sensor arrays. Integrated sensors and microcontrollers utilizing the Arduino IDE and C++ for precise sorting. Enabled real-time waste level monitoring and implemented automated alert notifications for efficient disposal management.
                             </p>
                         </div>
                         <div class="real-media">
-                            <img src="assets/projects/online_auction_ui.png" alt="Online Auction System" loading="lazy">
+                            <img src="assets/projects/smart_waste_management.jpg" alt="Smart Waste Management" loading="lazy">
+                        </div>
+                        <div class="real-actions">
+                            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository →</a>
                         </div>
                     </div>
 
-                    <div class="real-card">
+                    <!-- Project 4: Echo AI Assistant -->
+                    <div class="real-card project-filterable" data-category="python">
                         <div class="real-body">
                             <div class="badge-row">
                                 <span class="badge badge-blue">Python</span>
-                                <span class="badge badge-blue">OpenCV</span>
-                                <span class="badge badge-blue">MediaPipe</span>
-                                <span class="badge badge-blue">PyAutoGUI</span>
+                                <span class="badge badge-blue">Google APIs</span>
+                                <span class="badge badge-blue">Voice AI</span>
+                                <span class="badge badge-blue">Task Automation</span>
                             </div>
-                            <div class="real-title">Gesture Control Interface</div>
+                            <div class="real-title">Echo AI Assistant</div>
+                            <div style="font-size:0.8rem; color:var(--accent-blue); font-weight:600; margin-top:-0.5rem;">May 2024 – Dec 2024</div>
                             <p class="real-desc">
-                                A computer vision script translating hand coordinates into operating system commands,
-                                allowing hands-free
-                                volume adjustment, page scrolling, and desktop navigation using hand tracking.
+                                Designed and developed a voice-controlled personal assistant leveraging Python and Google APIs. Implemented keyword-based response mechanisms and interactive user features to improve task automation.
                             </p>
                         </div>
                         <div class="real-media">
-                            <img src="assets/projects/gesture_control_ui.png" alt="Gesture Control Interface"
-                                loading="lazy">
+                            <img src="assets/projects/echo_ai_assistant.png" alt="Echo AI Assistant" loading="lazy">
+                        </div>
+                        <div class="real-actions">
+                            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repository →</a>
                         </div>
                     </div>
 
@@ -773,11 +607,11 @@
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="section-wrapper">
             <div class="glass-panel sr">
                 <div class="section-header" style="margin-bottom:3rem;">
                     <span class="eyebrow">Get In Touch</span>
-                    <h2>Let's Collaborate</h2>
                 </div>
 
                 <div class="contact-grid">
@@ -793,7 +627,7 @@
                             <div>
                                 <div class="ci-label">Email</div>
                                 <div class="ci-value"><a
-                                        href="mailto:sadhamhussain.cbcs@gmail.com">sadhamhussain.cbcs@gmail.com</a>
+                                        href="mailto:venkat17092003@gmail.com">venkat17092003@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -806,7 +640,7 @@
                             </div>
                             <div>
                                 <div class="ci-label">Phone</div>
-                                <div class="ci-value"><a href="tel:+917448439991">+91 74484 39991</a></div>
+                                <div class="ci-value"><a href="tel:+916383560226">+91 63835 60226</a></div>
                             </div>
                         </div>
                         <div class="ci-item">
@@ -818,7 +652,7 @@
                             </div>
                             <div>
                                 <div class="ci-label">Location</div>
-                                <div class="ci-value">Chennai, Tamil Nadu, India</div>
+                                <div class="ci-value">East Tambaram, Chennai, India</div>
                             </div>
                         </div>
                         <div class="ci-item">
@@ -827,8 +661,8 @@
                             </div>
                             <div>
                                 <div class="ci-label">GitHub</div>
-                                <div class="ci-value"><a href="https://github.com/Sadham1412"
-                                        target="_blank">github.com/Sadham1412</a></div>
+                                <div class="ci-value"><a href="https://github.com/GVRAMAN17"
+                                        target="_blank" rel="noopener noreferrer">github.com/GVRAMAN17</a></div>
                             </div>
                         </div>
                         <div class="ci-item">
@@ -837,8 +671,8 @@
                             </div>
                             <div>
                                 <div class="ci-label">LinkedIn</div>
-                                <div class="ci-value"><a href="https://www.linkedin.com/in/sadham-hussain-b12971245"
-                                        target="_blank">Sadham Hussain</a></div>
+                                <div class="ci-value"><a href="https://www.linkedin.com/in/venkatramamoorthy"
+                                        target="_blank" rel="noopener noreferrer">linkedin.com/in/venkatramamoorthy</a></div>
                             </div>
                         </div>
                     </div>
@@ -846,8 +680,8 @@
                     <div class="sr sr-d1">
                         <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit"
                             method="POST">
-                            <input type="hidden" name="access_key" value="0c55b288-c8c0-4552-a129-b3c7ed704ade">
-                            <input type="hidden" name="subject" value="New message from portfolio contact form">
+                            <input type="hidden" name="access_key" value="812a8425-100d-4e76-b2b9-1a388f65a7d4">
+                            <input type="hidden" name="subject" value="New message from Venkatramamoorthy G's Portfolio">
 
                             <div class="form-row">
                                 <div class="form-field">
@@ -879,7 +713,7 @@
 
     </main>
 
-    <a href="mailto:sadhamhussain.cbcs@gmail.com" class="fab" aria-label="Send Email">
+    <a href="mailto:venkat17092003@gmail.com" class="fab" aria-label="Send Email">
         <svg viewBox="0 0 24 24">
             <path
                 d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
@@ -888,12 +722,27 @@
 
     <footer>
         <div class="footer-glow" aria-hidden="true"></div>
+        <div class="footer-socials" style="display:flex; justify-content:center; gap:0.75rem; margin-bottom:1.25rem;">
+            <a href="https://github.com/GVRAMAN17" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub">
+                <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/venkatramamoorthy" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn">
+                <i class="devicon-linkedin-plain" style="color:#0A66C2"></i>
+            </a>
+            <a href="mailto:venkat17092003@gmail.com" class="social-chip" aria-label="Email">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+            </a>
+        </div>
         <p class="footer-text">
-            &copy; 2026 Sadham.Dev &nbsp;·&nbsp; All rights reserved. &nbsp;·&nbsp;
-            Designed &amp; Built with ❤️ by <strong style="color:#fff">Sadham Hussain</strong>
+            &copy; 2026 Venkat.Dev &nbsp;·&nbsp; All rights reserved. &nbsp;·&nbsp;
+            Designed &amp; Built with ❤️ by <strong style="color:var(--text-primary)">Venkatramamoorthy G</strong>
         </p>
     </footer>
 
+    <div id="toast-container"></div>
+    <script src="portfolio-data.js"></script>
     <script src="script.js"></script>
 </body>
 

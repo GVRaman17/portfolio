@@ -211,13 +211,16 @@ function initTypewriter() {
   if (!el) return;
   if (prefersReducedMotion) { el.textContent = 'Software Developer'; return; }
 
-  const roles = [
-    'Software Developer',
-    'Python Backend Developer',
-    'Web Designer',
-    'UI/UX Designer',
-    'Freelancer',
-  ];
+  const roles = (typeof portfolioData !== 'undefined' && portfolioData.personal && portfolioData.personal.roles)
+    ? portfolioData.personal.roles
+    : [
+        'Python Full Stack Developer',
+        'Django Backend Specialist',
+        'REST API Developer',
+        'React & Web Developer',
+        'Software Engineer',
+        'Freelance Developer',
+      ];
   let ri = 0, ci = 0, deleting = false;
 
   function tick() {
@@ -484,7 +487,7 @@ function initForm() {
 
 function initParallax() {
   if (isTouch || prefersReducedMotion) return;
-  const el = $('.orbit-wrapper');
+  const el = $('.hero-image-wrapper') || $('.orbit-wrapper');
   if (!el) return;
   let tx = 0, ty = 0, cx = 0, cy = 0;
 
@@ -518,9 +521,109 @@ document.addEventListener('keydown', e => {
   }
 });
 
+function showToast(message, theme = 'dark') {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${theme}`;
+  toast.innerHTML = `<span>✨</span> <span>${message}</span>`;
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.style.animation = 'toastOut 0.35s cubic-bezier(0.16,1,0.3,1) forwards';
+    toast.addEventListener('animationend', () => toast.remove());
+  }, 3000);
+}
+
+function initThemeSwitcher() {
+  const themeBtns = $$('.theme-btn');
+
+  const savedTheme = localStorage.getItem('portfolio_theme') || 'light';
+  setTheme(savedTheme, false);
+
+  themeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = btn.dataset.themeSet;
+      setTheme(theme, true);
+    });
+  });
+
+  function setTheme(theme, notify = true) {
+    if (theme === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+    localStorage.setItem('portfolio_theme', theme);
+
+    themeBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.themeSet === theme);
+    });
+
+    if (notify) {
+      const themeNames = { dark: 'Dark Obsidian', cyber: 'Cyber Neon', light: 'Minimalist Light' };
+      showToast(`Switched to ${themeNames[theme] || theme} Theme`, theme);
+    }
+  }
+}
+
+function initProjectFilters() {
+  const filterBtns = $$('.filter-btn');
+  const projectCards = $$('.project-filterable');
+
+  if (!filterBtns.length || !projectCards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      projectCards.forEach(card => {
+        const cat = card.dataset.category;
+        if (filter === 'all' || cat === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+}
+
+function initDataHydration() {
+  if (typeof portfolioData === 'undefined') return;
+
+  const { personal } = portfolioData;
+
+  if (personal) {
+    const brandEl = $('.nav-brand');
+    if (brandEl && personal.brandName) {
+      brandEl.innerHTML = `${personal.brandName}<span>${personal.brandSuffix || '.Dev'}</span>`;
+    }
+
+    const heroName = $('.gradient-text');
+    if (heroName && personal.name) {
+      heroName.textContent = personal.name;
+    }
+
+    const heroBio = $('.hero-bio');
+    if (heroBio && personal.heroBio) {
+      heroBio.textContent = personal.heroBio;
+    }
+
+    const heroBadge = $('.hero-badge');
+    if (heroBadge && personal.badge) {
+      heroBadge.innerHTML = `<span class="dot"></span> ${personal.badge}`;
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  initCursor();
-  initParticles();
+  // initCursor();    // disabled — normal cursor used
+  // initParticles(); // disabled — clean theme, no particles
   initNav();
   initTypewriter();
   initReveal();
@@ -532,4 +635,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initRipple();
   initForm();
   initParallax();
+  initThemeSwitcher();
+  initProjectFilters();
+  initDataHydration();
 });
+
