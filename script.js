@@ -244,6 +244,8 @@ function initReveal() {
   const items = $$('.sr');
   if (!items.length) return;
 
+  document.documentElement.classList.add('js-ready');
+
   if (prefersReducedMotion || !('IntersectionObserver' in window)) {
     items.forEach(el => el.classList.add('ready'));
     return;
